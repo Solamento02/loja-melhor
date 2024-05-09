@@ -1,0 +1,337 @@
+<DOCTYPE! html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Nova+Square&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <title>Loja Eletrônicos</title>
+        <style>
+            *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .center{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        body { 
+            background: rgb(213,236,240);
+            background: linear-gradient(90deg, rgba(213,236,240,1) 0%, rgba(212,239,225,1) 35%, rgba(200,175,193,1) 100%);
+        }
+
+
+        body p{
+            font-family: 'Lato', sans-serif;
+        }
+
+        body h2{
+            font-family: 'Nova Square', sans-serif;
+        }
+
+        section.topo {
+            padding-top: 50px;
+            padding-right: 30px;
+        }
+
+        .menu li{
+            display: inline-block;
+            padding: 14px 16px;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 40px;
+        }
+
+        .menu a:hover {
+            color: #7A8E9E;
+        }
+
+
+        .section-banner-principal {
+            padding-bottom: 30px;
+        }
+
+
+        .banner-container {
+            display: flex;
+            justify-content: center;
+            background-image: url(imagens/bubble.png);
+            background-repeat: no-repeat;
+        }
+
+
+        .texto-banner {
+            padding-top: 280px;
+            padding-right: 240px;
+        }
+
+        .texto-banner h2 {
+            font-size: 80px;
+            font-weight: 400;
+        }
+
+        .texto-banner p {
+            font-size: 40px;
+        }
+
+        #mainly-button {
+            width: 170px;
+            height: 60px;
+            border-radius: 10px;
+            border-color: transparent;
+            font-size: 20px;
+            background-color: #6E6BCA;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        #mainly-button:hover {
+            background-color: #C5C4EA;
+        }
+
+        section.produtos-principais {
+            padding-bottom: 20px;
+        }
+
+        .produtos-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            object-position: center;
+        }
+
+        .produtos {
+            padding: 50px;
+            justify-content: space-evenly;
+            margin: 0 auto;
+        }
+
+        .produtos h2, p{
+            padding: 5px;
+        }
+
+        .produtos p {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .produtos img{
+            width: 405px;
+            cursor: pointer;
+            margin: 0 20px;
+            opacity: 1;
+            transition: 1s ease;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .produtos img:hover {
+            transform: scale(0.9);
+            opacity: 0.9;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+
+        .suporte a:hover{
+            cursor: pointer;
+        }
+
+        section.suporte {
+            background-color: #C5C4EA;
+        }
+
+
+        section.suporte h2 {
+            color: #00000;
+        }
+
+        section.suporte p {
+            padding: 10px;
+            color: #00000;
+        }
+
+        .suporte p:hover{
+            color: #7A8E9E;
+        }
+
+        .suporte-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            * {
+                overflow-x: hidden;
+            }
+
+            .menu li {
+                display: block;
+                padding: 10px 0;
+            }
+
+            .menu a {
+                font-size: 32px;
+            }
+
+            .banner-container {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .banner-container {
+                background-image: none;
+            }
+
+            .texto-banner {
+                padding-top: 40px;
+                padding-right: 20px;
+            }
+
+            .texto-banner h2 {
+                font-size: 40px;
+            }
+
+            .texto-banner p {
+                font-size: 24px;
+            }
+
+            #mainly-button {
+                width: 130px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .produtos {
+                padding: 20px;
+            }
+
+            .produtos img {
+                width: 100%;
+                margin: 0;
+            }
+
+            .suporte-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section.suporte h2,
+            section.suporte p {
+                text-align: center;
+            }
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <section class="topo">
+            <div class="center">
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">HEADPHONES</a></li>
+                    <li><a href="">GAMING</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="banner-principal">
+            <div class="center">
+                <div class="banner-container">
+                    <div class="texto-banner">
+                        <h2>JBL 540</h2>
+                        <p>Good taste of music</p>
+                        <button id="mainly-button" onclick="window.location=">Buy Now</button>
+                        <button id="mainly-button" onclick="window.location=">Shop</button>
+                    </div>
+
+                    <div class="imagem-banner">
+                        <img src="imagens/totte-annerbrink-NehdOHCXsjs-unsplash.jpg" />
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="produtos-principais">
+            <div class="produtos-container">
+                    <div class="produtos">
+                        <h2>Amplifier Mixer PWM1000 250W</h2>
+                        <p>The best way to listen</p>
+                        <img src="imagens/amplifier-venda.jpg" />
+                    </div>
+
+                    <div class="produtos">
+                        <h2>Iphone 12</h2>
+                        <p>New ways to communicate</p>
+                        <img src="imagens/iphone-venda.jpg"/>
+                    </div>
+
+                    <div class="produtos">
+                        <h2>JBL 540</h2>
+                        <p>Good taste to music</p>
+                        <img src="imagens/fone-venda.jpg"/> </a>
+                    </div>
+
+                    <div class="produtos">
+                        <h2>MK Duo</h2>
+                        <p>Perfect for gaming</p>
+                        <img src="imagens/gamer_tecladin-venda.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="suporte">
+                <div class="center">
+                    <div class="suporte-container"/>
+                        <div class="suportando">
+                            <a>
+                                <div>
+                                    <h2>Suport</h2>
+                                    <p>Warranty</p>
+                                    <p>User Guide</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="sobre">
+                            <a>
+                                <div>
+                                    <h2>About Us</h2>
+                                    <p>Leadership Team</p>
+                                    <p>Privacy Policy</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="seguir">
+                            <a>
+                                <div>
+                                    <h2>Follow me</h2>
+                                    <p>Email: contact@support.com</p>
+                                    <p>Hotline: 1 234 567 89</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
